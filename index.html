@@ -2,18 +2,73 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
 
-  <title>Frontend Mentor | Tip calculator app</title>
+	<title>Frontend Mentor | Tip calculator app</title>
 </head>
 
 <body>
+	<main>
+		<h1><img src="./images/logo.svg" alt="Splitter app logo"></h1>
+		<div class="tip-calculator">
+			<div class="options">
+				<div class="options__bill">
+					<label for="bill" class="options__label">Bill</label>
+					<input id="bill" type="number" min="0" step="0.01" class="options__input options__input--bill"
+						placeholder="0">
+				</div>
+				<div class="options__tips">
+					<p class="options__label">Select Tip %</p>
+					<div role="group" class="options__btn-group" aria-label="Tip options">
+						<button role="radio" class="btn options__tip-btn" aria-checked="false"
+							data-tip-percent="0.05">5%</button>
+						<button role="radio" class="btn options__tip-btn" aria-checked="false"
+							data-tip-percent="0.1">10%</button>
+						<button role="radio" class="btn options__tip-btn" aria-checked="false"
+							data-tip-percent="0.15">15%</button>
+						<button role="radio" class="btn options__tip-btn" aria-checked="false"
+							data-tip-percent="0.25">25%</button>
+						<button role="radio" class="btn options__tip-btn" aria-checked="false"
+							data-tip-percent="0.5">50%</button>
+						<input type="number" min="0" max="100" placeholder="Custom" aria-label="Custom tip"
+							class="options__input">
+					</div>
+				</div>
+				<div class="options__people">
+					<label for="people" class="options__label">Number of People</label>
+					<input id="people" type="number" min="0" placeholder="0"
+						class="options__input options__input--people">
+				</div>
+			</div>
+			<div class="results">
+				<div class="results__tip">
+					<div class="results__header">
+						<p class="results__heading">Tip Amount</p>
+						<p class="results__sub-heading">/ person</p>
+					</div>
+					<p class="results__amount results__amount--tip">$0.00</p>
+				</div>
+				<div class="results__total">
+					<div class="results__header">
+						<p class="results__heading">Total</p>
+						<p class="results__sub-heading">/ person</p>
+					</div>
+					<p class="results__amount results__amount--total">$0.00</p>
+				</div>
+				<button class="btn results__reset-btn" disabled>Reset</button>
+			</div>
+		</div>
+	</main>
 
-  <!-- Bill
+	<!-- Bill
 
   Select Tip %
   5%
