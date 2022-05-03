@@ -99,8 +99,10 @@ button {
 
 // MAIN CSS
 main {
-	display: grid;
-	place-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	min-height: 100vh;
 	padding-block: 3em;
 }
@@ -127,13 +129,13 @@ h1 {
 	display: grid;
 	gap: 3rem;
 	padding: 2em;
+	width: 100%;
 	max-width: 54em;
 	background-color: var(--bg-calculator);
 	border-radius: 20px 20px 0 0;
 
 	@media (min-width: 50em) {
 		grid-template-columns: repeat(2, 1fr);
-
 		border-radius: 20px;
 	}
 }

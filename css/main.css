@@ -59,9 +59,19 @@ button {
 }
 
 main {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   padding-block: 3em;
 }
@@ -89,6 +99,7 @@ h1 {
   display: grid;
   gap: 3rem;
   padding: 2em;
+  width: 100%;
   max-width: 54em;
   background-color: var(--bg-calculator);
   border-radius: 20px 20px 0 0;
