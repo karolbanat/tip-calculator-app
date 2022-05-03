@@ -8,8 +8,8 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Frontendmentor solution page](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages site](https://your-live-site-url.com)
+- Solution URL: [Frontendmentor solution page](https://www.frontendmentor.io/solutions/tip-calculator-app-Hyv_620rc)
+- Live Site URL: [GitHub Pages site](https://karolbanat.github.io/tip-calculator-app/)
 
 ## Author
 
