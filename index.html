@@ -39,11 +39,14 @@
 						<button role="radio" class="btn options__tip-btn" aria-checked="false"
 							data-tip-percent="0.5">50%</button>
 						<input type="number" min="0" max="100" placeholder="Custom" aria-label="Custom tip"
-							class="options__input">
+							class="options__input options__input--tip">
 					</div>
 				</div>
 				<div class="options__people">
-					<label for="people" class="options__label">Number of People</label>
+					<div class="options__people-header">
+						<label for="people" class="options__label">Number of People</label>
+						<p class="options__error options__error--people">Can't be zero</p>
+					</div>
 					<input id="people" type="number" min="0" placeholder="0"
 						class="options__input options__input--people">
 				</div>
@@ -68,25 +71,7 @@
 		</div>
 	</main>
 
-	<!-- Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset -->
+	<script src="./js/script.js"></script>
 
 </body>
 

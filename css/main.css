@@ -162,6 +162,10 @@ h1 {
   background-image: url("../images/icon-person.svg");
 }
 
+.options__input.error {
+  border: 2px solid tomato;
+}
+
 .options__btn-group {
   display: -ms-grid;
   display: grid;
@@ -193,6 +197,25 @@ h1 {
 .options__tip-btn.selected {
   --bg-tip-button: var(--clr-primary);
   --tip-button: var(--clr-neutral-700);
+}
+
+.options__people-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.options__error {
+  visibility: hidden;
+  text-align: right;
+  color: tomato;
+}
+
+.options__error.visible {
+  visibility: visible;
 }
 
 .results {
